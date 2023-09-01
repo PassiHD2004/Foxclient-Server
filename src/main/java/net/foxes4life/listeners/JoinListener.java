@@ -34,9 +34,4 @@ public class JoinListener implements Listener {
                     Utils.chat(Objects.requireNonNull(plugin.getConfig().getString("JoinMessage")).replace("<player>", p.getName())));
         }
     }
-
-    @EventHandler
-    public void onPlayerLeave(PlayerQuitEvent e) {
-        // What to do when the player leaves?
-    }
 }
