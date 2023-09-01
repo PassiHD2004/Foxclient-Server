@@ -3,9 +3,6 @@
 Primitive version of soon to be a plugin that will connect [FoxClient](https://github.com/FoxStudios/FoxClient) with a server.
 
 ## Current features:
-- fly command
-- heal command
-- feed command
 - Custom Join/Quit messages
 
 ## Planned features:
