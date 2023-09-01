@@ -7,29 +7,11 @@ fly_noperm: "&7&l[&c&l*&7&l] &6&lYou don't have permission to execute this comma
 # Set message, for when players don't have perms for /fly.
 
 no_console: "&cOnly players can execute this command"
-# Set message for, when any command is executed via console..
+# Set message for, when any command is executed via console.
 
 
 ## Messages
 # You can use color codes with "&".
-
-fly_enabled: "&7&l[&a&l*&7&l] &6&lFlight activated"
-# Set message for when player activated flight via /fly.
-
-fly_disabled: "&7&l[&c&l*&7&l] &6&lFlight deactivated"
-# Set message for when player deactivated flight via /fly.
-
-feed_filled: "&7&l[&a&l*&7&l] &6&lYou have been graciously fed!"
-# Set message for when player fed themselves via /feed.
-
-feed_full: "&7&l[&c&l*&7&l] &6&lSorry, but you're not hungry"
-# Set message for when player already has full hunger...
-
-heal_filled: "&b&lLive longer!"
-# Heal filled Message
-
-heal_full: "&f&lWelp, you can already live longer!"
-# Health already full Message
 
 foxclient_message: "&d&lFoxclient server plugin. \n&f&lVersion: fuck do i know"
 
@@ -47,16 +29,7 @@ QuitMessage: "&2&l<player> &f&lleft the server"
 # Set message that appears when player leaves.
 
 
-##Berechtigungen
-
-fly_perm: "fly.use"
-# Permission for /fly
-
-feed_perm: "feed.use"
-# Permission for /feed
-
-heal_perm: "heal.use"
-# Permission for /fly
+## Permissions
 
 common: "fox.common.use"
 # Permission for commands that don't need permission, but still exists because funny

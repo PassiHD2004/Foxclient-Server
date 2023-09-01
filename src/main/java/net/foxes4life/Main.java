@@ -9,11 +9,8 @@ public final class Main extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        new FlyCMD(this);
         new JoinListener(this);
         new QuitListener(this);
-        new FeedCMD(this);
-        new HealCMD(this);
         new FoxclientCMD(this);
     }
 
