@@ -3,9 +3,6 @@
 no_perm: "&cYou don't have permission to execute this command"
 # Set message, for when players don't have perms.
 
-fly_noperm: "&7&l[&c&l*&7&l] &6&lYou don't have permission to execute this command"
-# Set message, for when players don't have perms for /fly.
-
 no_console: "&cOnly players can execute this command"
 # Set message for, when any command is executed via console.
 
