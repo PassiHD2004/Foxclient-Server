@@ -1,32 +1,22 @@
 ## No permissions/Player only
-
 no_perm: "&cYou don't have permission to execute this command"
 # Set message, for when players don't have perms.
-
 no_console: "&cOnly players can execute this command"
 # Set message for, when any command is executed via console.
 
-
 ## Messages
 # You can use color codes with "&".
-
 foxclient_message: "&d&lFoxclient server plugin. \n&f&lVersion: fuck do i know"
-
 
 ## Join/Quit messages
 # You can use color codes with "&".
-
 First_JoinMessage: "&a&l<player> &b&ljoined the server for the first time."
 # Set message that appears when player joins for the first time.
-
 JoinMessage: "&e&l<player> &6&ljoined the server"
 # Set message that appears when player joins.
-
 QuitMessage: "&2&l<player> &f&lleft the server"
 # Set message that appears when player leaves.
 
-
 ## Permissions
-
 common: "fox.common.use"
 # Permission for commands that don't need permission, but still exists because funny
