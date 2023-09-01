@@ -7,24 +7,27 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
-import org.bukkit.event.player.PlayerQuitEvent;
-import org.bukkit.plugin.Plugin;
 
 import java.util.Objects;
 
 public class JoinListener implements Listener {
 
+    private static Main plugin;
+
     public JoinListener(Main plugin) {
+        JoinListener.plugin = plugin;
         Bukkit.getPluginManager().registerEvents(this, plugin);
     }
 
     @EventHandler
-    public void onPlayerJoin(PlayerJoinEvent e, Plugin plugin) {
+    public void onPlayerJoin(PlayerJoinEvent e) {
         // What to do when the player joins?
 
         Bukkit.getPluginManager().registerEvents(this, plugin);
 
         Player p = e.getPlayer();
+
+        e.setJoinMessage("");
 
         if (!p.hasPlayedBefore()) {
             Bukkit.broadcastMessage (

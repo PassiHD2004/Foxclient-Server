@@ -7,27 +7,27 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerQuitEvent;
-import org.bukkit.plugin.Plugin;
 
 import java.util.Objects;
 
 public class QuitListener implements Listener {
 
+    private static Main plugin;
+
     public QuitListener(Main plugin) {
+        QuitListener.plugin = plugin;
+
         Bukkit.getPluginManager().registerEvents(this, plugin);
     }
 
     @EventHandler
-    public void onPlayerQuit(PlayerQuitEvent e, Plugin plugin) {
+    public void onPlayerQuit(PlayerQuitEvent e) {
         Player p = e.getPlayer();
 
-        if (!p.hasPlayedBefore()) {
-            Bukkit.broadcastMessage (
-                    Utils.chat(Objects.requireNonNull(plugin.getConfig().getString("First_JoinMessage")).replace("<player>", p.getName())));
-        } else {
-            Bukkit.broadcastMessage (
-                    Utils.chat(Objects.requireNonNull(plugin.getConfig().getString("JoinMessage")).replace("<player>", p.getName())));
+        e.setQuitMessage("");
+        {
+            Bukkit.broadcastMessage(
+                    Utils.chat(Objects.requireNonNull(plugin.getConfig().getString("QuitMessage")).replace("<player>", p.getName())));
         }
     }
-
 }

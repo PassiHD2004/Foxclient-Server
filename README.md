@@ -13,4 +13,4 @@ Primitive version of soon to be a plugin that will connect [FoxClient](https://g
 
 
 ### Known issues:
-- Join/Quit messages are double (minecraft native and plugin join/quit messages both show)
+- Join messages increase exponentially
